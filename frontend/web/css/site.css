@@ -1,0 +1,612 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.avtorize-modal {
+    background: #FFFFFF;
+}
+
+.avtorize-modal ul li p {
+    color: #000000;
+}
+
+.container-index {
+    padding: 0px 20px;
+    max-width: 1082px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+.modalRegister {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background: #252525;
+}
+
+.ModalPro {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+    overflow-y: auto;
+    display: none;
+    bottom: 0px;
+    z-index: 4;
+    background: #252525;
+}
+
+.ModalClosePro {
+    position: absolute;
+    right: 0px;
+    color: #414C94;
+    cursor: pointer;
+    font-size: 40px;
+    top: 0px;
+}
+
+.ModalProContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.ModalPro .ButtonPro {
+    height: 86px;
+    max-width: 311px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.ModalPro .ButtonPro .Freelancer-content-buttons-main button p {
+    font-size: min(max(1.587vw, 18px), 24px);
+}
+
+.ModalPro .ButtonPro .Freelancer-content-buttons-black button p {
+    font-size: min(max(1.587vw, 18px), 24px);
+}
+
+.ModalProCenter h2 {
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.ModalPro .ButtonPro {
+    display: flex;
+    justify-content: center;
+}
+
+.ModalPro .ButtonPro .Freelancer-content-buttons-main-img {
+    position: absolute;
+    top: 50%;
+    width: 39px;
+    height: 39px;
+    transform: translate(0%, -50%);
+}
+
+.ModalPro .ButtonPro .Freelancer-content-buttons-black-img {
+    width: 39px;
+    height: 39px;
+}
+
+.ModalProCenter {
+    display: flex;
+    max-width: 1085px;
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ModalProBasic h2 {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    -webkit-background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+}
+
+.ModalProBasic {
+    padding: 25px;
+    max-width: 335px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid #08E5FC;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.ModalProBasic ul {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.ModalProBasic button {
+    color: #F535DA;
+    margin-top: 35px;
+    border: 2px solid #F535DA;
+    border-radius: 40px;
+    max-width: 245px;
+    width: 100%;
+    padding: 20px;
+    background: none;
+    cursor: pointer;
+}
+
+.ModalProBasic b {
+    margin-top: 10px;
+}
+
+.ModalProBasic ul li {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 15px;
+}
+
+.modalLogin {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px auto;
+    z-index: 4;
+    background: #252525;
+}
+
+.modalBlock {
+    background: linear-gradient(0deg, #FC00FF -8.13%, #00DBDE 100%);
+    border-radius: 10px;
+    max-width: 621px;
+    width: 100%;
+    padding: 40px;
+}
+
+.modalBlock {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalBlock h2 {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.modalForm {
+    width: 100%;
+}
+
+.modalForm form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 15px;
+}
+
+.password-link {
+    color: #FFFFFF;
+    align-self: flex-end;
+    text-decoration: underline;
+}
+
+.modalForm form input, .modalForm form select {
+    width: 100%;
+    height: 66px;
+    padding-left: 20px;
+    border: 1px solid #08E5FC;
+    border-radius: 10px;
+}
+
+.modalForm form button {
+    padding: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    background: #F535DA;
+    cursor: pointer;
+    border-radius: 40px;
+    max-width: 305px;
+    margin: 0px auto;
+}
+
+.Modal-login-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.chat {
+    position: sticky;
+    bottom: 0px;
+    float: right;
+    margin-right: 30px;
+    z-index: 2;
+    max-width: 318px;
+    width: 100%;
+}
+
+.chat-hide {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    column-gap: 15px;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 318px;
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+
+}
+
+.chat-show-header {
+    display: flex;
+    max-width: 318px;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 20px 20px 0px 0px;
+    column-gap: 15px;
+}
+
+.chat-close {
+    position: absolute;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    right: 20px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.chat-show-header img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.chat-show-header p {
+    font-weight: 500;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.chat-show {
+    display: none;
+
+}
+
+.message-chat {
+    background: #FFFFFF;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+}
+
+.message-container {
+    padding: 15px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    overflow-x: hidden;
+}
+
+.chat-hide img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.chat-hide h2 {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.chat-hide p {
+    font-size: 10px;
+    color: #FFFFFF;
+}
+
+.message-title1 {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.message-title1 img {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+}
+
+.message-title1 .message-title-text h2 {
+    font-size: 14px;
+}
+
+.message-title1 .message-title-text {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.message-title1 .message-title-text p {
+    color: #828282;
+    font-size: 10px;
+}
+
+.message-main-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.message-content-text {
+    padding: 10px;
+    max-width: 228px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    margin-left: auto;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #1EBBED;
+    border-radius: 5px;
+}
+
+.dont-empty-form {
+    font-size: 10px;
+    color: #828282;
+    align-self: center;
+    opacity: 0.8;
+}
+
+.message-container form {
+    display: flex;
+    padding-left: 25px;
+    flex-direction: column;
+    row-gap: 13px;
+}
+
+.message-container form input {
+    padding: 10px;
+    font-size: 14px;
+    max-width: 225px;
+    border: 1px solid #1EBBED;
+    border-radius: 4px;
+}
+
+.input-message {
+    border: 1px solid #828282;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    padding-right: 80px;
+    padding-left: 40px;
+}
+
+.input-message-block {
+    padding: 15px;
+}
+
+.left-buttons {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(0px, -50%);
+}
+
+.right-buttons {
+    position: absolute;
+    right: 20px;
+    width: 55px;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.input-message-relative {
+    position: relative;
+}
+
+.message-container form input::placeholder {
+    color: #BDBDBD;
+}
+
+.message-tehpod {
+    display: flex;
+    flex-direction: column;
+}
+
+.Modal-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.modalLogin {
+    display: none;
+}
+
+.modalRegister {
+    display: none;
+}
+
+.Modal-login-close p {
+    font-size: 40px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.Modal-close p {
+    font-size: 40px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.swap-modal {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.alternative-registration {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #08E5FC;
+}
+
+.alternative-registration-block {
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+.alternative-registration-block p {
+    color: #FFFFFF;
+}
+
+.alternative-registration-block ul {
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+}
+
+.alternative-registration-block ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Font-size50 {
+    font-size: min(max(3.307vw, 24px), 50px);
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.Font-size36 {
+    font-size: min(max(2.381vw, 24px), 36px);
+    font-weight: 600;
+    letter-spacing: 0px;
+}
+
+.Font-size28 {
+    font-size: min(max(1.852vw, 18px), 28px);
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.Font-size24 {
+    font-size: min(max(1.587vw, 18px), 24px);
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.Font-size20 {
+    font-weight: 600;
+    font-size: min(max(1.323vw, 18px), 20px);
+    letter-spacing: 0px;
+}
+
+.Font-size18 {
+    font-size: min(max(1.190vw, 16px), 18px);
+}
+
+.Font-size13 {
+    font-size: min(max(0.860vw, 11px), 13px);
+}
+
+@media (min-width: 1512px) {
+    .Font-size50 {
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: 0px;
+    }
+
+    .Font-size36 {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+
+    .Font-size28 {
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .Font-size24 {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .Font-size20 {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    .modalBlock {
+        padding: 20px;
+    }
+}

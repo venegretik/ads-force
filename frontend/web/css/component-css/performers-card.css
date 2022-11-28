@@ -1,0 +1,169 @@
+.performers-cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 52px;
+    column-gap: 80px;
+}
+
+.performers-card {
+    display: flex;
+    gap: 30px;
+}
+.performers-cards a{
+    height: 260px!important;
+}
+
+
+.performers-card:hover .performers-card-right ul li::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    left: -15px;
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 50%;
+}
+
+.performers-card:hover .performers-card-right ul {
+    list-style: none;
+}
+
+.performers-card:hover .performers-card-right h2 {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.performers-card-mobile {
+    display: none;
+}
+
+.performers-card {
+    cursor: pointer;
+}
+
+.performers-card-left {
+    max-width: 145px;
+    width: 100%;
+}
+
+.performers-card-left img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: initial;
+    height: 145px;
+}
+
+.performers-card-stars ul {
+    display: flex;
+    margin-top: 17px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.performers-card-stars ul li {
+    background-image: url('../../img/index/starEmpty.svg');
+    position: relative;
+    width: 21px;
+    height: 20px;
+}
+
+.yellowStar {
+    position: absolute;
+    z-index: -1;
+}
+
+.performers-card-right {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    flex-direction: column;
+    max-width: 317px;
+    width: 100%;
+    gap: 5px;
+}
+
+.performers-card-right-title {
+    display: flex;
+    gap: 10px;
+    font-family: 'Rubik', sans-serif;
+    align-items: center;
+}
+
+.performers-card-right-title p {
+    color: #F535DA;
+}
+
+.progress-bar-content ul li div h1,
+p {
+    font-family: 'Rubik', sans-serif;
+}
+
+.text-italic {
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-style: italic;
+}
+
+.liked-message {
+    font-size: min(max(1.323vw, 18px), 20px);
+    text-transform: uppercase;
+}
+
+.performers-card-right ul {
+    margin-left: 10px;
+}
+
+.performers-card-mobile-bottom ul li p {
+    font-weight: 400;
+}
+
+.performers-card-right ul li {
+    position: relative;
+}
+
+.performers-card-right ul li p {
+    font-weight: 400;
+}
+
+@media(max-width:580px) {
+    .performers-card-right {
+        display: none;
+    }
+
+    .performers-card-mobile-top img {
+        width: 100%;
+        object-fit: initial;
+        max-width: 145px;
+        border-radius: 50%;
+        height: 145px;
+    }
+
+    .performers-card-mobile-top {
+        display: flex;
+        gap: 20px;
+    }
+
+    .performers-card-left {
+        display: none;
+    }
+
+    .performers-card-mobile {
+        display: block;
+    }
+
+    .performers-card-mobile-top .performers-card-stars {
+        max-width: 134px;
+    }
+
+    .performers-card-mobile-top .performers-card-stars ul {
+        margin-top: 10px;
+    }
+
+    .performers-card-mobile-bottom {
+        margin-top: 15px;
+        margin-left: 15px;
+        font-family: 'Rubik', sans-serif;
+    }
+}

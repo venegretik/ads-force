@@ -1,0 +1,154 @@
+.tasks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+    margin-left: auto;
+    max-width: 632px;
+}
+
+.task-list {
+    width: 100%;
+}
+
+.filters-list {
+    display: flex;
+    column-gap: 20px;
+}
+
+.task-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border: 2px solid #F2F2F2;
+    box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+    padding: 20px;
+}
+.inactive__tasks{
+    border: 2px solid darkred;
+    box-shadow: 0px 2px 15px rgba(170, 6, 6, 0.75);
+}
+.filter-task-item {
+    display: flex;
+    column-gap: 20px;
+}
+
+.filter-task-item .status-task p {
+    padding: 5px;
+    font-size: 14px;
+    background: #B7FFA5;
+    border-radius: 4px;
+    display: inline-flex;
+}
+
+.filter-task-items {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #BDBDBD;
+    column-gap: 5px;
+}
+
+.filter-task-items .img-title {
+    position: absolute;
+    top: -20px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    background: linear-gradient(90deg, rgb(206, 6, 208, 0.45) 0%, rgb(0, 219, 222, 0.45) 45%);
+    font-size: 11px;
+    padding: 5px;
+    display: none;
+    z-index: 1;
+    border-radius: 4px;
+}
+.filter-task-items:hover> .img-title{
+    display: inline-flex;
+}
+.task-title h2 {
+    font-weight: 500;
+}
+
+.tasks-item {
+    display: none;
+}
+
+.right-item-filter {
+    margin-left: auto;
+    display: flex;
+    column-gap: 10px;
+    white-space: nowrap;
+    align-items: center;
+    color: #BDBDBD;
+}
+
+.task-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 6px;
+}
+
+.task-tag-item {
+    color: #BDBDBD;
+    font-size: 12px;
+    padding: 5px 15px;
+    border: 0.5px solid #1EBBED;
+    border-radius: 13px;
+}
+
+.filter-task-item-main {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+
+.status-task {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.hi-order {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.status-task img {
+    display: none;
+}
+
+.filter-task-item .hi-order p {
+    padding: 5px;
+    font-size: 14px;
+    background-color: #9B51E0;
+    color: #ffffff;
+    border-radius: 4px;
+    display: inline-flex;
+}
+
+.hi-order img {
+    display: flex;
+}
+
+@media(max-width:867px) {
+    .task-item {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:580px) {
+    .filter-task-item-main {
+        flex-direction: column;
+    }
+
+    .right-item-filter {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}

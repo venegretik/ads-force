@@ -1,0 +1,133 @@
+.left-navbar {
+    max-width: 383px;
+}
+
+.hello-user {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.balance-user {
+    margin: 10px 0px;
+}
+
+.hello-user h2 {
+    font-weight: 500;
+}
+
+.button-add-balance {
+    padding: 20px;
+    max-width: 214px;
+    justify-content: center;
+    color: #FFFFFF;
+    width: 100%;
+    display: inline-flex;
+    background: #F535DA;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.button-add-balance:hover{
+    color: #FFFFFF;
+}
+.circle-message {
+    background: #F535DA;
+    height: 100%;
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+
+.circle-message p {
+    font-size: 16px;
+}
+
+.news-mobile {
+    display: none;
+}
+
+.left-navbar-bottom ul {
+    list-style: none;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    border-top: 1px solid #E0E0E0;
+    max-width: 367px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.left-navbar-bottom ul li {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.left-navbar-bottom ul li a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.news-title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.left-nav-bar-news {
+    padding: 30px;
+    width: 100%;
+    max-width: 383px;
+    border: 2px solid #F2F2F2;
+    filter: drop-shadow(0px 2px 15px rgba(225, 225, 225, 0.25));
+    border-radius: 9px;
+}
+
+.news-title h2 {
+    font-weight: 500;
+}
+
+.news-list ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.news-list ul li {
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+
+.date-news {
+    padding: 10px;
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 20px;
+}
+
+.more-news {
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.active-link {
+    font-weight: 600!important;
+}
+
+@media(max-width:768px) {
+    .left-navbar {
+        display: none;
+    }
+
+    .news-mobile {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+}

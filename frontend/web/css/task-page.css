@@ -1,0 +1,191 @@
+.task-page-full {
+    padding: 100px 0px;
+}
+
+.link-back a {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #F535DA;
+    margin-bottom: 10px;
+}
+
+.task-card {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border: 2px solid #F2F2F2;
+    box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+    border-radius: 10px;
+}
+
+.file-block {
+    display: flex;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+
+.file-list ul {
+    display: flex;
+    list-style: none;
+    row-gap: 5px;
+    flex-direction: column;
+}
+
+.file-list ul li a {
+    color: #F535DA;
+    text-decoration: underline;
+}
+
+.task-button {
+    display: flex;
+    margin-top: 55px;
+    justify-content: center;
+}
+
+.task-button button {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    filter: drop-shadow(2px 3px 7px rgba(158, 158, 158, 0.25));
+    background: #F535DA;
+    border: 1px solid #F535DA;
+    border-radius: 40px;
+    max-width: 468px;
+    width: 100%;
+}
+
+.modalRegister {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background: #252525;
+}
+
+.modalRegisterContainer {
+    max-width: 621px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 15px;
+    padding: 50px;
+    background: linear-gradient(0deg, #FC00FF -8.13%, #00DBDE 100%);
+    border-radius: 10px;
+}
+
+.modalRegisterContainer form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.modalRegisterContainer form input {
+    padding: 15px;
+    border: 1px solid #08E5FC;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+.modalRegisterContainer form textarea {
+    padding: 15px;
+    border: 1px solid #08E5FC;
+    border-radius: 10px;
+    resize: none;
+    max-height: 127px;
+    padding-left: 40px;
+}
+
+.modalRegisterContainer h2 {
+    color: #ffffff;
+}
+
+.upload-link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.upload-file {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.upwout-button {
+    padding: 20px;
+    max-width: 305px;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #F535DA;
+    color: #ffffff;
+    border-radius: 40px;
+}
+
+.success-modal {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+.success-modal p {
+    color: #ffffff;
+}
+
+.success-modal button {
+    padding: 20px;
+    filter: drop-shadow(2px 3px 7px rgba(158, 158, 158, 0.25));
+    background: #F535DA;
+    border-radius: 40px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.upload-file ul {
+    display: flex;
+    list-style: none;
+    padding-left: 30px;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.upload-file ul li a {
+    color: #08E5FC;
+}
+
+.upload-link a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.modalRegisterClose{
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    top: 20px;
+}
+
+.modalRegister{
+    display: none;
+}
+
+.success-modal{
+    display: none;
+}

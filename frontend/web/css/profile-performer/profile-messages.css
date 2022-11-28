@@ -1,0 +1,45 @@
+.Profile-full {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.right-column {
+    max-width: 635px;
+    width: 100%;
+}
+
+.messages-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.messages-item {
+    padding: 20px 30px;
+    border: 2px solid #E0E0E0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.messages-item h2{
+    font-size: 18px;
+}
+
+.messages-item p{
+    font-size: 16px;
+}
+
+.messages-item a{
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.messages-item img{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+}

@@ -1,0 +1,86 @@
+.Profile-full {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.profile-empty {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.profile-empty button {
+    padding: 20px 10px;
+    color: #FFFFFF;
+    max-width: 214px;
+    background: #F535DA;
+    border-radius: 100px;
+}
+
+.tasks {
+    margin-bottom: 20px;
+}
+
+.display-none {
+    display: none;
+}
+
+.profile-right {
+    max-width: 700px;
+    width: 100%;
+}
+
+.navigation-task {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.navigation-task>a {
+    padding: 20px;
+    background: #F535DA;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    max-width: 403px;
+    width: 100%;
+}
+.pagination{
+    display: flex;
+    column-gap: 15px;
+    list-style: none;
+}
+
+.pagination ul {
+    display: flex;
+    list-style: none;
+}
+
+.pagination .active {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.pagination li a{
+    display: block;
+    color: white;
+    padding: 5px 10px;
+}
+.pagination .disabled{
+    color: white;
+    padding: 5px 10px;
+}
+.right-arrow-pagination {
+    transform: rotate(-180deg);
+}
+
+@media(max-width:768px) {
+    .tasks {
+        margin-left: 0px !important;
+    }
+}

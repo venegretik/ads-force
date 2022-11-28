@@ -1,0 +1,406 @@
+.Profile-full {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.main-info-payment {
+    display: flex;
+}
+
+.profile-right {
+    width: 100%;
+    max-width: 635px;
+}
+
+.main-info-balance {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    white-space: nowrap;
+}
+
+.table-payment {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info-balance h2 {
+    font-weight: 500;
+}
+
+.text-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-right {
+    margin-left: auto;
+}
+
+.main-info-payment {
+    display: flex;
+    column-gap: 45px;
+}
+
+.add-button {
+    padding: 20px;
+    max-width: 214px;
+    color: #FFFFFF;
+    width: 100%;
+    cursor: pointer;
+    background: #F535DA;
+    border-radius: 100px;
+}
+
+.withdraw-button {
+    padding: 20px;
+    max-width: 214px;
+    cursor: pointer;
+    width: 100%;
+    background: none;
+    border: 1.5px solid #F535DA;
+    border-radius: 100px;
+}
+
+.main-info-buttons {
+    display: flex;
+    max-width: 500px;
+    column-gap: 13px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.history-payment {
+    margin-top: 50px;
+}
+
+.history-payment>h2 {
+    font-weight: 500;
+}
+
+.table-title ul {
+    display: flex;
+    list-style: none;
+}
+
+.table-title ul li {
+    width: 33.33333%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.table-body {
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.table-body ul {
+    display: flex;
+    list-style: none;
+}
+
+.table-body ul li {
+    width: 33.33333%;
+    display: flex;
+    align-items: center;
+}
+
+.summ-table {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.success-tasks-list>h2 {
+    margin: 30px 0px;
+}
+
+.success-calendar-filter form {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.main-content-form {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.main-content-form img{
+    cursor:pointer;
+}
+.button-form {
+    width: 100%;
+}
+
+.button-form button {
+    padding: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    max-width: 195px;
+    font-size: 16px;
+    width: 100%;
+    background: #F535DA;
+    border-radius: 100px;
+}
+
+.success-calendar-filter input {
+    border: 1px solid #414C94;
+    border-radius: 8px;
+    max-width: 150px;
+    width: 100%;
+    min-height: 40px;
+}
+
+.empty-success-task p {
+    color: #414C94;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.act-lists {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.act-items {
+    padding: 25px 10px;
+    justify-content: space-between;
+    display: flex;
+    max-width: 418px;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.5s;
+    border: 1.5px solid #1EBBED;
+    border-radius: 10px;
+}
+
+.act-items:hover {
+    background: #101141;
+    border: 1.5px solid #1EBBED;
+    box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+    border-radius: 10px;
+}
+.act-items:hover .act-items-title h2{
+    color: #FFFFFF;
+}
+.act-items-img {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.act-items-title h2 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.navigation-task {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.navigation-task button {
+    padding: 20px;
+    background: #F535DA;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #FFFFFF;
+    max-width: 403px;
+    width: 100%;
+}
+
+.performers-cards {
+    margin-bottom: 55px;
+}
+
+.pagination-items {
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.pagination-items ul {
+    display: flex;
+    list-style: none;
+}
+
+.active-paginate {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.pagination-items ul li a {
+    padding: 5px 10px;
+}
+
+.right-arrow-pagination {
+    transform: rotate(-180deg);
+}
+
+.ModalPuyment {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px auto;
+    z-index: 4;
+    background: #252525;
+}
+.ModalPurcase{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px auto;
+    z-index: 4;
+    background: #252525;
+}
+.modalBlock {
+    background: linear-gradient(0deg, #FC00FF -8.13%, #00DBDE 100%);
+    border-radius: 10px;
+    max-width: 621px;
+    width: 100%;
+    padding: 40px;
+}
+
+.Modal-close {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.Modal-close p {
+    font-size: 40px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.modalBlock {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    row-gap: 15px;
+    position: relative;
+    flex-direction: column;
+}
+
+.modalBlock h2 {
+    color: #FFFFFF;
+    max-width: 416px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modalBlockForm form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    max-width: 416px;
+    margin: 0px auto;
+}
+
+.modalBlockForm form p {
+    color: #FFFFFF;
+}
+
+.puymentModalButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #F535DA;
+    border-radius: 40px;
+    color: #FFFFFF;
+}
+
+.closeModalButton {
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    color: #F535DA;
+    background: #FFFFFF;
+    font-size: 20px;
+    border: 2px solid #F535DA;
+    border-radius: 40px;
+}
+
+.modalBlockForm form input {
+    padding: 15px;
+    max-width: 416px;
+    font-size: 14px;
+    border: 1px solid #08E5FC;
+    border-radius: 10px;
+}
+
+.formCheckbox {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.formCheckbox input {
+    background: none;
+}
+
+.formCheckbox p {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+@media (max-width: 978px) {
+    .success-calendar-filter form {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-mobile {
+        margin: 30px auto;
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width:580px) {
+    .main-info-balance {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        white-space: nowrap;
+    }
+
+    .success-calendar-filter input {
+        max-width: 125px;
+    }
+
+    .button-form button {
+        max-width: none;
+    }
+
+    .main-info-payment {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+
+    .act-items-title h2 {
+        font-size: 14px;
+    }
+}

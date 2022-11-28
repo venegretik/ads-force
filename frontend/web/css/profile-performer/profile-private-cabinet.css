@@ -1,0 +1,640 @@
+.fon-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+
+.Profile-container {
+    max-width: none;
+    padding: 0px;
+}
+
+.Profile-container h1 {
+    display: none;
+}
+
+.left-navbar {
+    display: none;
+}
+
+.back-link {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.back-link a {
+    display: inline-flex;
+    column-gap: 5px;
+    align-items: center;
+    color: #F535DA;
+}
+
+.slick-slide {
+    margin-right: 15px;
+}
+
+.card-portfolio {
+    background: linear-gradient(0deg, rgba(16, 17, 65, 0.58), rgba(16, 17, 65, 0.58)), url('../../img/profile/private-profile/bg-slider.png');
+    border: 1px solid #828282;
+    border-radius: 7px;
+    height: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+    background-size: cover;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    padding-top: min(max(40vw, 15px), 105px);
+    padding-bottom: 15px;
+}
+
+.tasks-items {
+    margin-bottom: 20px;
+}
+
+.modalPortfolio {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: auto;
+    display: none;
+    margin: 0px auto;
+    z-index: 3;
+    background: #252525;
+}
+
+.modalReview {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px 20px;
+    flex-direction: column;
+    overflow: auto;
+    display: none;
+    row-gap: 15px;
+    justify-content: center;
+    margin: 0px auto;
+    z-index: 3;
+    background: #252525;
+}
+
+.content-text textarea {
+    width: 100%;
+    padding: 15px;
+    resize: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+
+.information-text-profile textarea {
+    width: 100%;
+    padding: 15px;
+    resize: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+.block-mobile-information-content textarea{
+    width: 100%;
+    padding: 15px;
+    resize: none;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+}
+.modalReviewContainer {
+    max-width: 912px;
+    width: 100%;
+    display: flex;
+    margin: 0px auto;
+}
+
+.rewiev-card {
+    position: relative;
+}
+
+.rewiev-card-close {
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #F535DA;
+    right: 15px;
+}
+
+.modalReview .arrows-slider {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 912px;
+}
+
+.ModalClose {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #FFFFFF;
+    top: 18px;
+}
+
+.img-slider-item img {
+    width: 100%;
+}
+
+.modalPortfolioContainer {
+    max-width: 1080px;
+    position: relative;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+.portfolioBG {
+    background: linear-gradient(0deg, rgba(85, 79, 79, 0.58), rgba(85, 79, 79, 0.58)), url('../../img/profile/private-profile/bg-slider.png');
+    padding: min(max(40vw, 60px), 120px) 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    background-size: cover;
+}
+.tag-input{
+    padding:15px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 8px;
+}
+.img-slider-items {
+    margin-bottom: 20px;
+}
+
+.portfolioInformation h2 {
+    padding-bottom: 18px;
+    padding-top: 30px;
+    color: #FFFFFF;
+}
+
+.portfolioInformation p {
+    color: #FFFFFF;
+    font-weight: 400 !important;
+}
+
+.img-slider-full h2 {
+    color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+
+.portfolioBG h2 {
+    color: #FFFFFF;
+}
+
+.card-portfolio h2 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.img-profile-full {
+    max-width: 181px;
+    width: 100%;
+    display: flex;
+    row-gap: 11px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-profile {
+    box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+    padding: 10px 20px;
+    display: flex;
+    max-height: 181px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #E0E0E0;
+}
+
+.img-profile-full a {
+    text-align: center;
+    color: #1EBBED;
+    text-decoration-line: underline;
+}
+
+.profile-info {
+    display: flex;
+    column-gap: 40px;
+}
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.profile-full {
+    display: flex;
+    column-gap: 40px;
+}
+
+.performers-card-stars ul {
+    display: flex;
+    margin-top: 17px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.performers-card-stars ul li {
+    background-image: url('../../img/index/starEmpty.svg');
+    position: relative;
+    width: 21px;
+    height: 20px;
+}
+
+.yellowStar {
+    position: absolute;
+    z-index: -1;
+}
+
+.performers-card-stars {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.profile-date {
+    color: #BDBDBD;
+}
+
+.profile-left {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+}
+.arrows-slider{
+    margin-top: 10px;
+}
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.information-text-profile {
+    padding: 30px;
+    border: 1px solid #1EBBED;
+    box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+    border-radius: 14px;
+    position: relative;
+}
+
+.pen-abs {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.skills-item {
+    max-width: 194px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #1EBBED;
+    border-radius: 42px;
+}
+
+.skills-item p {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.skills-user {
+    width: 100%;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-user-items {
+    display: flex;
+    justify-content: center;
+    max-width: 410px;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.profile-right {
+    width: 100%;
+    display: flex;
+}
+
+.profile-right a {
+    padding: 15px;
+    background: #F535DA;
+    max-width: 214px;
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: auto;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 100px;
+}
+.add-portfol{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.add-portfolio{
+    padding: 15px;
+    background: #F535DA;
+    max-width: 214px;
+    width: 100%;
+    color: #FFFFFF;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 100px;
+    margin-left: auto;
+    cursor: pointer;
+    margin-right: auto;
+}
+.add-portfolio:hover{
+    color: #FFFFFF;
+}
+.all-information-table {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 60px;
+    border-collapse: collapse;
+}
+
+.top-nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-collapse: collapse;
+}
+
+.nav-item {
+    width: 33.33333%;
+    display: flex;
+    cursor: pointer;
+    border-collapse: collapse;
+    padding: 40px 0px;
+    border: 1px solid #1EBBED;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-text {
+    max-width: 904px;
+    border-collapse: collapse;
+    width: 100%;
+    display: none;
+}
+
+.content-text-mobile {
+    max-width: 904px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+    border: 1px solid #1EBBED;
+    border-top: 0px;
+    padding: 30px;
+}
+
+.rewiev-card {
+    width: 100%;
+    position: relative;
+    padding: 14px;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 15px;
+    padding-top: 9px;
+    margin-top: 40px;
+}
+
+.rewiev-card-top {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.rewiev-card-top img {
+    margin-top: -50px;
+    width: 78px;
+    border-radius: 50%;
+    height: 78px;
+}
+
+.rewiev-card-title p {
+    font-size: min(max(0.926vw, 14px), 14px);
+}
+
+.rewiev-card-content p {
+    font-size: min(max(1.058vw, 14px), 16px);
+}
+
+.arrows-slider-right {
+    transform: rotate(-180deg);
+}
+
+.arrows-slider img {
+    cursor: pointer;
+}
+
+.tasks {
+    margin-right: auto;
+}
+
+.performers-card-stars {
+    min-width: 176px;
+}
+
+.mobile-information-table {
+    display: none;
+}
+
+.mobile-title-skills {
+    display: none;
+}
+
+.pagination-links {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination-items {
+    display: flex;
+    column-gap: 15px;
+}
+
+.pagination-items ul {
+    display: flex;
+    list-style: none;
+}
+
+.active-paginate {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.pagination-items ul li a {
+    padding: 5px 10px;
+}
+
+.right-arrow-pagination {
+    transform: rotate(-180deg);
+}
+
+.pagination-links {
+    color: #BDBDBD;
+    font-size: 18px;
+}
+
+.add-mobile-task {
+    width: 100%;
+    padding: 20px;
+    color: #FFFFFF;
+    background: #F535DA;
+    border-radius: 100px;
+    max-width: 307px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:920px) {
+    .profile-full {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    .mobile-title-skills {
+        display: flex;
+        text-align: center;
+        font-size: 16px;
+        color: #BDBDBD;
+    }
+}
+
+@media(max-width:768px) {
+    .pagination-links {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .pagination-links p {
+        align-self: flex-end;
+    }
+}
+
+@media(max-width:580px) {
+    .all-information-table {
+        display: none;
+    }
+
+    .tasks-item {
+        display: block !important;
+    }
+
+    .mobile-information-table {
+        display: flex;
+        row-gap: 15px;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .text-information {
+        padding-top: 10px;
+    }
+
+    .img-profile-full {
+        max-width: 105px;
+    }
+
+    .profile-info {
+        column-gap: 25px;
+    }
+
+    .mobile-rewiev {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        column-gap: 10px;
+        padding: 20px;
+        position: relative;
+        border: 1px solid #1EBBED;
+        width: 100%;
+        justify-content: center;
+        box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    .mobile-hide-info {
+        display: none;
+    }
+
+    .block-mobile-information-content {
+        padding: 15px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        padding-top: 25px;
+        margin-top: -10px;
+        border: 1px solid #E0E0E0;
+        box-shadow: 0px 2px 15px rgba(225, 225, 225, 0.25);
+        border-radius: 0px 0px 14px 14px;
+    }
+
+    .skills-item {
+        max-width: 165px;
+    }
+
+    .skills-item p {
+        font-size: 14px;
+    }
+
+    .skills-user-items {
+        column-gap: 5px;
+    }
+
+}

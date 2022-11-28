@@ -1,0 +1,191 @@
+.title-tasks {
+  position: relative;
+  margin-bottom: 24px;
+  padding-top: 88px;
+}
+
+.title-text {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.title-text img {
+  width: 23px;
+  height: 23px;
+}
+
+.message-title {
+  max-width: 704px;
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  border-radius: 4px;
+  background: linear-gradient(
+    to right,
+    rgb(206, 6, 208, 0.1),
+    rgb(0, 219, 222, 0.1)
+  );
+  padding: 18px 20px;
+}
+
+.title-performers {
+  display: flex;
+  row-gap: 5px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  column-gap: 60px;
+}
+
+.select-filter {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.select-popular {
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.select__pop {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+  color: #1ebbed;
+  outline: none;
+  border: none;
+  text-align: end;
+}
+
+.select-list {
+  display: none;
+}
+
+.select-list ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.justify-select {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-performers h2 {
+  font-weight: 600;
+}
+
+.performers-full {
+  max-width: 550px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.mobile-filter-open {
+  display: none;
+}
+
+.performers-full {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.right-arrow-pagination {
+  transform: rotate(-180deg);
+}
+.active-paginate {
+  background: linear-gradient(90deg, #ce06d0 0%, #00dbde 100%);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.pagination-items,
+.pagination {
+  list-style: none;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.pagination li {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 7px 10px;
+}
+
+.pagination li.disabled {
+  cursor: not-allowed;
+}
+
+.view-tasks ul li a:hover {
+  color: #1ebbed;
+}
+
+.pagination .active {
+  background: linear-gradient(90deg, #ce06d0 0%, #00dbde 100%);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.view-tasks ul {
+  display: flex;
+  list-style: none;
+  column-gap: 8px;
+}
+
+.pageSize_label {
+  cursor: pointer;
+}
+
+@media (max-width: 867px) {
+  .title-tasks {
+    position: relative;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 10px;
+    padding-top: 30px;
+  }
+
+  .mobile-filter-open {
+    display: flex;
+  }
+
+  .select-filter {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .performers-full {
+    margin-left: 0px;
+  }
+  .performers-full {
+    max-width: none;
+  }
+  .title-text {
+    align-self: flex-start;
+  }
+
+  .message-title {
+    position: static;
+  }
+}
+
+@media (max-width: 580px) {
+  .select-popular p {
+    font-size: 13px;
+  }
+}

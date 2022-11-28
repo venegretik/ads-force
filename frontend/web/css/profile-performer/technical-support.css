@@ -1,0 +1,220 @@
+.Profile-full {
+    display: flex;
+    column-gap: 35px;
+    margin-bottom: 100px;
+}
+
+.rigth-column {
+    width: 100%;
+    max-width: 656px;
+}
+
+.review-switch {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.review-switch input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+/* Normal Track */
+.review-switch input[type="checkbox"].ios-switch+div {
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 999px;
+    -webkit-transition-duration: .4s;
+    -webkit-transition-property: background-color, box-shadow;
+}
+
+.review-switch input[type="checkbox"].ios-switch+div>div {
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: inherit;
+    -webkit-transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
+    -webkit-transition-duration: 0.4s;
+    -webkit-transition-property: transform, background-color, box-shadow;
+    -moz-transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
+    -moz-transition-duration: 0.4s;
+    -moz-transition-property: transform, background-color;
+    pointer-events: none;
+    margin-top: 1px;
+    margin-left: 3px;
+}
+
+/* Checked Track (Blue) */
+.review-switch input[type="checkbox"].ios-switch:checked+div {
+    width: 40px;
+    border: 1px solid;
+}
+
+.review-switch input[type="checkbox"].bigswitch.ios-switch+div {
+    width: 50px;
+    height: 25px;
+}
+
+.review-switch input[type="checkbox"].ios-switch:checked+div>div {
+    -webkit-transform: translate3d(20px, 0, 0);
+    -moz-transform: translate3d(20px, 0, 0);
+    background-color: #1EBBED !important;
+}
+
+.review-switch input[type="checkbox"].tinyswitch.ios-switch+div>div {
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+}
+
+/* Checked Tiny Knob (Blue Style) */
+.review-switch input[type="checkbox"].tinyswitch.ios-switch:checked+div>div {
+    -webkit-transform: translate3d(16px, 0, 0);
+    -moz-transform: translate3d(16px, 0, 0);
+}
+
+.review-switch input[type="checkbox"].bigswitch.ios-switch+div>div {
+    width: 17px;
+    height: 17px;
+    background-color: #BDBDBD;
+    margin-top: 3px;
+}
+
+.review-switch input[type="checkbox"].bigswitch.ios-switch:checked+div>div {
+    -webkit-transform: translate3d(25px, 0, 0);
+    -moz-transform: translate3d(16px, 0, 0);
+}
+
+.technical-support-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 15px;
+}
+
+.call-tehnical-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.call-tehnical-item {
+    border: 2px solid #E0E0E0;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+.call-tehnical-item .call-tehnical-item-img {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #1EBBED;
+}
+
+.call-tehnical-item-text b {
+    font-size: 16px;
+    display: inline-flex;
+}
+
+.call-tehnical-item-text p {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.call-tehnical-item-text a {
+    font-size: 14px;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.date-call-tehnical {
+    position: absolute;
+    top: 20px;
+    color: #BDBDBD;
+    font-size: 14px;
+    right: 20px;
+}
+
+.call-list-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.call-list-button>a {
+    max-width: 403px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    color: #ffffff;
+    background: #F535DA;
+    border-radius: 100px;
+}
+
+.pagination-items {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+
+.pagination-items ul {
+    display: flex;
+    list-style: none;
+}
+
+.active-paginate {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.pagination-items ul li a {
+    padding: 5px 10px;
+}
+
+.right-arrow-pagination {
+    transform: rotate(-180deg);
+}
+
+@media(max-width:580px) {
+    .call-tehnical-item {
+        border: 2px solid #E0E0E0;
+        border-radius: 15px;
+        display: flex;
+        position: relative;
+        column-gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .date-call-tehnical {
+        right: 10px;
+    }
+
+    .call-tehnical-item-text b {
+        font-size: 14px;
+        max-width: 140px;
+    }
+
+    .call-tehnical-item-text p {
+        font-size: 12px;
+    }
+
+    .call-tehnical-item-text a {
+        font-size: 14px;
+        margin-top: 15px;
+        text-decoration: underline;
+    }
+}

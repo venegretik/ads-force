@@ -1,0 +1,56 @@
+.Profile-full {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 100px;
+}
+
+.profile-right {
+    width: 100%;
+    max-width: 700px;
+}
+
+.navigation-task {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.navigation-task>a {
+    padding: 20px;
+    text-align: center;
+    background: #F535DA;
+    border-radius: 100px;
+    cursor: pointer;
+    color: #FFFFFF;
+    max-width: 403px;
+    width: 100%;
+}
+
+.performers-cards {
+    margin-bottom: 55px;
+}
+
+.pagination-items {
+    display: flex;
+    column-gap: 15px;
+}
+
+.pagination-items ul {
+    display: flex;
+    list-style: none;
+}
+
+.active-paginate {
+    background: linear-gradient(90deg, #CE06D0 0%, #00DBDE 100%);
+    border-radius: 4px;
+}
+
+.pagination-items ul li a {
+    padding: 5px 10px;
+}
+
+.right-arrow-pagination {
+    transform: rotate(-180deg);
+}
