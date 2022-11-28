@@ -1,0 +1,324 @@
+2022-09-16 13:37:32 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct()
+#1 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#6 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#7 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#16 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#18 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#19 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#20 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#21 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#22 D:\html\OpenServer\domains\ads-force\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#4 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#5 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#14 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#16 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#17 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#18 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#19 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#20 D:\html\OpenServer\domains\ads-force\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'root'@'localhost' (using password: NO)
+)
+
+2022-09-16 13:37:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '80x32766 (80x25)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Павлов Артур\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPOSER_CACHE_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\..\\..\\..\\userdata\\composer\\cache'
+    'COMPOSER_CAFILE' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\..\\..\\..\\userdata\\config\\cacert.pem'
+    'COMPOSER_HOME' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\..\\..\\..\\userdata\\composer'
+    'COMPUTERNAME' => 'DESKTOP-474PP5T'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x00CE01F2'
+    'ConEmuBaseDir' => 'D:\\html\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\html\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '220418'
+    'ConEmuCfgDir' => ''
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\html\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x000F0442'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001601FA'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '8100'
+    'ConEmuServerPID' => '1524'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\html\\openserver'
+    'ConEmuWorkDrive' => 'd:'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOME' => 'd:\\html\\openserver'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\html\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Павлов Артур\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-474PP5T'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Администратор\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\html\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\html\\openserver\\modules\\conemu;D:\\html\\openserver\\modules\\conemu\\ConEmu;d:\\html\\openserver\\modules\\php\\PHP_8.1\\ext;d:\\html\\openserver\\modules\\php\\PHP_8.1\\pear;d:\\html\\openserver\\modules\\php\\PHP_8.1\\pear\\bin;d:\\html\\openserver\\modules\\php\\PHP_8.1;d:\\html\\openserver\\modules\\wget\\bin;d:\\html\\openserver\\modules\\database\\MariaDB-10.6-Win10\\bin;d:\\html\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;d:\\html\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHPDIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\'
+    'PHPRC' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1'
+    'PHP_BIN' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHP_BINARY' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHP_BINDIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\'
+    'PHP_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\'
+    'PHP_INI' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 112 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '7000'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'd:\\html\\openserver\\userdata\\temp'
+    'TMP' => 'd:\\html\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-474PP5T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-474PP5T'
+    'USERNAME' => 'Павлов Артур'
+    'USERPROFILE' => 'C:\\Users\\Павлов Артур'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Games\\virtualbox\\'
+    'windir' => 'C:\\Windows'
+    '__COMPAT_LAYER' => 'DetectorsWin8'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1663324649.2423
+    'REQUEST_TIME' => 1663324649
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2022-09-19 11:22:31 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct()
+#1 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#6 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#7 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#8 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#10 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#11 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#16 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#17 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#18 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#19 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#20 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#21 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#22 D:\html\OpenServer\domains\ads-force\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare()
+#4 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal()
+#5 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(320): yii\db\Command->queryAll()
+#6 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(756): yii\db\mysql\Schema->loadTableSchema()
+#8 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\db\Schema.php(192): yii\db\Schema->getTableMetadata()
+#9 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array()
+#14 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams()
+#15 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Controller.php(180): yii\base\Controller->runAction()
+#16 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Module.php(552): yii\console\Controller->runAction()
+#17 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction()
+#18 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction()
+#19 D:\html\OpenServer\domains\ads-force\vendor\yiisoft\yii2\base\Application.php(384): yii\console\Application->handleRequest()
+#20 D:\html\OpenServer\domains\ads-force\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1045
+    [2] => Access denied for user 'root'@'localhost' (using password: NO)
+)
+
+2022-09-19 11:22:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'ANSICON' => '80x32766 (80x25)'
+    'ANSICON_DEF' => '7'
+    'APPDATA' => 'C:\\Users\\Павлов Артур\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-474PP5T'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'ConEmuANSI' => 'ON'
+    'ConEmuAnsiLog' => ''
+    'ConEmuArgs' => '/Single'
+    'ConEmuArgs2' => ''
+    'ConEmuBackHWND' => '0x003D0404'
+    'ConEmuBaseDir' => 'D:\\html\\openserver\\modules\\conemu\\ConEmu'
+    'ConEmuBaseDirShort' => 'D:\\html\\OpenServer\\modules\\conemu\\ConEmu'
+    'ConEmuBuild' => '220418'
+    'ConEmuCfgDir' => ''
+    'ConEmuConfig' => ''
+    'ConEmuDir' => 'D:\\html\\openserver\\modules\\conemu'
+    'ConEmuDrawHWND' => '0x00A5040E'
+    'ConEmuDrive' => 'D:'
+    'ConEmuHooks' => 'Enabled'
+    'ConEmuHWND' => '0x001703D6'
+    'ConEmuPalette' => '<ConEmu>'
+    'ConEmuPID' => '8176'
+    'ConEmuServerPID' => '6068'
+    'ConEmuTask' => '{Shells::cmd}'
+    'ConEmuWorkDir' => 'd:\\html\\openserver'
+    'ConEmuWorkDrive' => 'd:'
+    'HOME' => 'd:\\html\\openserver'
+    'HOMEDRIVE' => 'd:'
+    'HOMEPATH' => '\\html\\openserver'
+    'LOCALAPPDATA' => 'C:\\Users\\Павлов Артур\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-474PP5T'
+    'NUMBER_OF_PROCESSORS' => '2'
+    'OneDrive' => 'C:\\Users\\Администратор\\OneDrive'
+    'OPENSSL_CONF' => 'd:\\html\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\conf\\openssl.cnf'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\html\\openserver\\modules\\conemu;D:\\html\\openserver\\modules\\conemu\\ConEmu;d:\\html\\openserver\\modules\\php\\PHP_8.1\\ext;d:\\html\\openserver\\modules\\php\\PHP_8.1\\pear;d:\\html\\openserver\\modules\\php\\PHP_8.1\\pear\\bin;d:\\html\\openserver\\modules\\php\\PHP_8.1;d:\\html\\openserver\\modules\\wget\\bin;d:\\html\\openserver\\modules\\database\\MariaDB-10.6-Win10\\bin;d:\\html\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1\\bin;d:\\html\\openserver\\modules\\http\\Apache_2.4-PHP_8.0-8.1;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\system32\\Wbem;C:\\Windows\\SysWOW64'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPBIN' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHPDIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\'
+    'PHPRC' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1'
+    'PHP_BIN' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHP_BINARY' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHP_BINDIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\'
+    'PHP_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\'
+    'PHP_INI' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.ini'
+    'PHP_PEAR_BIN_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR'
+    'PHP_PEAR_DATA_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\data'
+    'PHP_PEAR_DOC_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\docs'
+    'PHP_PEAR_INSTALL_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\pear'
+    'PHP_PEAR_PHP_BIN' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\php.exe'
+    'PHP_PEAR_SYSCONF_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR'
+    'PHP_PEAR_TEST_DIR' => 'd:\\html\\openserver\\modules\\php\\PHP_8.1\\PEAR\\tests'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'AMD64 Family 21 Model 112 Stepping 0, AuthenticAMD'
+    'PROCESSOR_LEVEL' => '21'
+    'PROCESSOR_REVISION' => '7000'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$E[m$E[32m$E]9;8;\"USERNAME\"$E\\@$E]9;8;\"COMPUTERNAME\"$E\\$S$E[92m$P$E[90m$_$E[90m$$$E[m$S$E]9;12$E\\'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'd:\\html\\openserver\\userdata\\temp'
+    'TMP' => 'd:\\html\\openserver\\userdata\\temp'
+    'USERDOMAIN' => 'DESKTOP-474PP5T'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-474PP5T'
+    'USERNAME' => 'Павлов Артур'
+    'USERPROFILE' => 'C:\\Users\\Павлов Артур'
+    'VBOX_MSI_INSTALL_PATH' => 'D:\\Games\\virtualbox\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1663575736.9949
+    'REQUEST_TIME' => 1663575736
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
